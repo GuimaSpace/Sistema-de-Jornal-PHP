@@ -1,0 +1,62 @@
+body {
+    background:rgb(228, 222, 222);
+    font-family: verdana;
+    max-width: 900px; /*ajuda deixar o site mais responsivo.*/
+    margin: auto; /*faz com que os elementos possuam margem automática*/
+}
+
+.photo {
+    width: 147px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 50% /*deixa a foto quadrada em redondo*/
+}
+
+#title, .subtitle, .post_title {
+    color:#505050;
+} 
+
+#title {
+    font-size: 40px;
+    text-transform: uppercase; /*transforma o texto em maiúsculo. Há também formas de deixar só me minúsculo, só primeira letra em maiúscula e etc*/
+}
+
+a /*muda os links*/ {
+    text-decoration: line-through; /*passa uma linha no meio do texto. Dá pra fazer com que a linha passe em baixo, em cima etc*/
+    color: #505050
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    border-radius: 5px /*SOBRE BORDER: tem dashed, dotted... tmb tem border-top,border-right etc. Dá para deixar específico: border-color, border-width etc. E se quiser, ser ainda mais específico NOS LADOS: border-top-color, border-top-width,border-top-style. Há também border-radius, ex: border-radius 10px, border-radius 50%, border-radius 10% 20%, border-radius 10% 20% 15% 22% para alterar todos os lado caso seja um quadrado. Se você tiver um elemento quadrado e quer transforma-lo em círculo, use o border-radius no 50%*/
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px; /*essa é a mergem inferior*/
+    text-transform: capitalize; /*primeira letra fica maiúscula*/
+    text-align: justify;
+}
+
+.post_image {
+    margin-bottom: 15px;
+    /*width: 100%; faz com que a imagem ocupe 100% do espaço em que ele está incluído. útil para casos em que a imagem está vazando do espaço permitido.*/
+}
+
+.contact_list {
+    list-style-type: none; /*tira marcadores das listas, no entanto, ao lugar de none podemos colocar uma url de emoji, square para colocar quadrado e etc*/
+    padding-left: 15px;
+
+}
+
+.contact_list li a {
+    text-decoration: none;
+}
